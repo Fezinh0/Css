@@ -37,7 +37,7 @@
         }
 
         hr {
-            width: 70px;
+            width: 70%;
             margin: auto;
             height: 15px;
             background-color: purple;
@@ -46,6 +46,46 @@
             box-shadow: black 1px 1px 5px inset;
             /* inverte a cor para dentro */
 
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: justify;
+            letter-spacing: 2px;
+            /* espaçamento entre as letras */
+
+        }
+
+        li {
+            background-color: #7fffd4;
+            list-style: square;
+            /* deixa os pontinhos da lista quadrada ou do jeito que preferir */
+        }
+
+        #destaque {
+            background-color: #FFA500;
+            border: solid 2px black
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        #center {
+            text-align: center;
+        }
+
+        .desk {
+            background-color: green;
+            padding: 8px; /* espaçamento interno */
+            /* margin: ; espaçamento externo */
+        }
+
+        .arre{
+            border-radius: 15px;
         }
     </style>
 
@@ -62,14 +102,14 @@
         <hr>
         <p>Abaixo você encontra uma lista com alguns programas utilizados para o desenvolvimento de sites:</p>
         <ul>
-            <li>Brackets</li>
-            <li>Notepad++</li>
-            <li>Sublime</li>
-            <li>Dreamweaver</li>
+            <li id="destaque">Brackets</li>
+            <li id="destaque">Notepad++</li>
+            <li id="destaque">Sublime</li>
+            <li id="destaque">Dreamweaver</li>
         </ul>
         <hr>
-        <h3>Desenvolvido de acordo com os Padrões Web.</h3>
-        <p><img src="imagens/chapeleiro.jpg" alt="chapeleiro maluco"></p>
+        <p class="desk arre">Desenvolvido de acordo com os Padrões Web.</p>
+        <p id="center"><img class="arre" src="imagens/chapeleiro.jpg" alt="chapeleiro maluco"></p>
 
 
 
