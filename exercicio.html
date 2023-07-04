@@ -7,22 +7,10 @@
     <link rel="icon" href="#">
 
     <style>
-        body{
+        body {
             width: 700px;
-            
-        }
-        #tabela {
-            background-color: rgb(1, 4, 53);
-            color: white;
-            border-radius: 10px;
-            text-align: center;
-            font-family: verdana, arial, sans-serif;
-            letter-spacing: 2px;
-           
-        }
+            margin: 30px;
 
-        p{
-         font-family: verdana, arial, sans-serif;
         }
 
         h1 {
@@ -33,14 +21,48 @@
             text-align: center;
         }
 
-        .tm{
-            height: 150px;
-            width: 200px;
-            border-radius: 15px;
+        p {
+            text-align: justify;
+            /* Não fiz */
+            font-family: verdana, arial, sans-serif;
         }
 
-        .ct{
+        .tabela {
+            background-color: rgb(1, 4, 53);
+            color: white;
+            /* Cor correta #373e3c */
+            border-radius: 10px;
+            text-align: center;
+            font-family: verdana, arial, sans-serif; /* conte correta cursive */
+            /* fonte correta cursive; */
+            padding: 10px;
+            border-spacing: 15px;
+            font-size: 10pt; /* Não fiz */
+
+        }
+
+        .img {
+            height: 80px;
+            width: 100px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .ct {
             text-align: justify;
+        }
+
+        .b {
+            color: red;
+        }
+
+        .i {
+            color: rgb(243, 94, 143);
+        }
+
+        .pp {
+            padding: 20px;
+            padding-
         }
     </style>
 </head>
@@ -48,14 +70,16 @@
 <body>
     <h1>Esportes com bola</h1>
 
-    <p>Tão antigos quanto o homem, os esportes são uma das invenções mais beneficentes do homem. <b>Além de manter o corpo
-        saudável</b>, ainda auxiliam na criação de uma série de comportamentos positivos, como a humildade, a união, a
-        empatia, dentre outros.</p>
+    <p>Tão antigos quanto o homem, os esportes são uma das invenções mais beneficentes do homem. <b class="b">Além de
+            manter o corpo
+            saudável</b>, ainda auxiliam na criação de uma série de comportamentos positivos, como a <i
+            class="i">humildade, a união, a
+            empatia,</i> dentre outros.</p>
 
     <p>E os esportes com bola são, sem nenhuma dúvida, os mais populares. Mas se você sabe a diferença entre alguns
         deles? É justamente isso que iremos descobrir abaixo</p>
 
-    <table id="tabela">
+    <table class="tabela">
         <caption> thead / tbody / tfoot </caption>
         <thead>
             <th colspan="3">Esporte</th>
@@ -66,8 +90,8 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="">1</td>
-                <td><img class="tm" src="img2/baseball.jpg">
+                <td>1</td>
+                <td class="pp"><img class="img" src="img2/baseball.jpg">
                 <td>Baseball</td>
                 <td>EUA,1971</td>
                 <td>Campo com 1/4 de circulo, de 92 a 108,2m de raio</td>
@@ -76,7 +100,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td><img class="tm" src="img2/beachsoccer.jpg">
+                <td><img class="img" src="img2/beachsoccer.jpg">
                 <td>Beach Soccer</td>
                 <td>1930, Brasil</td>
                 <td>Quadra de areia com 30 ou 37 m x 26 ou 27 de largura</td>
@@ -85,7 +109,7 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td><img class="tm" src="img2/biribol.jpeg">
+                <td><img class="img" src="img2/biribol.jpeg">
                 <td>Biribol</td>
                 <td>1968, Brasil</td>
                 <td>Piscina com 4 x 8 x 1,3m</td>
@@ -94,7 +118,7 @@
             </tr>
             <tr>
                 <td>4</td>
-                <td><img class="tm" src="img2/Frescobol.jpg">
+                <td><img class="img" src="img2/Frescobol.jpg">
                 <td>Frescobol</td>
                 <td>Brasil, 1946</td>
                 <td>Ao ar livre</td>
@@ -103,6 +127,7 @@
             </tr>
         </tbody>
     </table>
+    <p>Saíba mais acessando o <a href="http://www.saopaulofc.net/" target="_blank">link</a></p>
 </body>
 
 </html>
