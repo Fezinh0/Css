@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="icon" href="#">
+    <style>
+        h1,
+        p {
+            text-align: center;
+        }
+
+        .container {
+            background: black;
+            justify-content: center;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        #ct {
+            display: flex;
+        }
+
+        .img1 {
+            border: solid 1px;
+            border-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        /* Segunda parte */
+
+
+        .container2 {
+            width: 100%;
+            margin: 50px auto;
+            background: black;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            box-shadow: grey  10px 10px 8px 6px;
+            background: #ffffff;
+            width: 300px;
+            height: 450px;
+            padding: 30px 0 0 0;
+            border-radius: 5px;
+
+            color: rgb(0, 0, 0);
+            float: left;
+            margin: 3px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .img {
+            box-shadow: grey 2px 2px 15px;
+            border-radius: 15px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .bt {
+            color: rgb(0, 0, 0);
+            background: rgb(245, 245, 245);
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        a:hover {
+            background-color: rgb(255, 48, 48);
+            color: rgb(0, 0, 0);
+        }
+
+        .img1:hover {
+            border: solid 10px white;
+        }
+
+        .img1:active {
+            color: rgb(255, 0, 0);
+            border: solid 10px;
+        }
+
+        #imm:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clique na imagen correta</h1>
+    <p>Qual dessas imagens não faz parte do esporte?</p>
+
+    <div class="container" id="ct">
+        <div class="inf">
+            <img class="img1" src="img2/baseball.jpg">
+        </div>
+
+        <div class="inf">
+            <img class="img1" src="img2/beachsoccer.jpg">
+        </div>
+
+        <div class="inf">
+            <img class="img1" src="img2/biribol.jpeg">
+        </div>
+
+        <div class="inf">
+            <img class="img1" id="imm" src="imagens/chapeleiro.jpg"></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container2" id="ct2">
+        <div class="card">
+            <img class="img" src="img2/item.png">
+            <h2>ITEM</h2>
+            <p>Descrição do item</p>
+            <a class="bt" href="#">Acesse</a>
+        </div>
+
+        <div class="container2">
+
+            <div class="card">
+                <img class="img" src="img2/item.png">
+                <h2>ITEM</h2>
+                <p>Descrição do item</p>
+                <a class="bt" href="#">Acesse</a>
+            </div>
+
+            <div class="container2">
+                <div class="card">
+                    <img class="img" src="img2/item.png">
+                    <h2>ITEM</h2>
+                    <p>Descrição do item</p>
+                    <a class="bt" href="#">Acesse</a>
+                </div>
+            </div>
+</body>
+
+</html>
+
+<!-- Correto
+    
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Posicionamento</title>
+
+    <style>
+        .inicio {
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: black;
+
+        }
+
+        .flex-container>div {
+            margin: 12px;
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+
+        }
+
+
+        .esporte:hover {
+            border: solid 2px white;
+        }
+
+        .esporte:active {
+            border: solid 20px red;
+        }
+
+        #noesporte:active {
+            border: solid 20px green;
+        }
+
+
+
+
+        .item {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 50px;
+            width: 88%;
+            padding: 15px;
+        }
+
+        .produtos img {
+            max-width: 200px;
+            border-radius: 5px;
+            box-shadow: grey 1px 1px 5px;
+
+        }
+
+        .produtos {
+            box-shadow: grey 1px 1px 5px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            width: 230px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .produtos h4 {
+            padding-top: 50px;
+            color: #060606;
+            text-transform: uppercase;
+        }
+
+        .img-produto {
+            width: 150px;
+            height: 150px;
+            margin: 12px;
+        }
+
+        .acesse {
+            text-transform: uppercase;
+            background-color: #0b0b0b;
+            width: 100px;
+            height: 20px;
+            padding: 3px;
+            margin: auto;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .acesse:hover {
+            background-color: #ed8209;
+            color: #000;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1 class="inicio">Clique na imagem correta</h1>
+
+    <p class="inicio">Qual destas imagens não faz parte de esporte?</p>
+
+    <div class="flex-container">
+        <div class="esporte"><a href="#"><img src="images/basebol.jpg" alt=""></a></div>
+        <div class="esporte"><a href="#"><img src="images/beachsoccer.jpg" alt=""></a></div>
+        <div class="esporte"><a href="#"><img src="images/biribol.png" alt=""></a></div>
+        <div class="esporte" id="noesporte"><a href="#"><img src="images/chapeleiro.jpg" alt=""></a></div>
+    </div>
+    <br>
+    <hr>
+    <div class="item">
+        <div class="produtos">
+            <div class="img-produto">
+                <img src="images/frescobol.jpg" alt="">
+            </div>
+            <h4>ITEM</h4>
+            <p>Descrição do Item</p>
+            <div class="acesse">Acesse</div>
+
+        </div>
+
+        <div class="produtos">
+            <div class="img-produto">
+                <img src="images/frescobol.jpg" alt="">
+            </div>
+            <h4>ITEM</h4>
+            <p>Descrição do Item</p>
+            <div class="acesse">Acesse</div>
+
+        </div>
+
+        <div class="produtos">
+            <div class="img-produto">
+                <img src="images/frescobol.jpg" alt="">
+            </div>
+            <h4>ITEM</h4>
+            <p>Descrição do Item</p>
+            <div class="acesse">Acesse</div>
+
+        </div>
+
+</body>
+
+</html>
+
+</body>
+
+</html>-->
